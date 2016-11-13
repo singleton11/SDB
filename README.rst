@@ -26,7 +26,7 @@ Project will have the following directory structure:
         ├── apps
         │   └── __init__.py
         ├── manage.py
-        └── test
+        └── <project_slug>
             ├── __init__.py
             ├── settings
             │   ├── base.py
