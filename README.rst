@@ -46,3 +46,4 @@ Changelog
 **********
 
 - Added README
+- Added Apache LICENSE
