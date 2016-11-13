@@ -46,4 +46,4 @@ Changelog
 **********
 
 - Added README
-- Added Apache LICENSE
+- Added MIT LICENSE
