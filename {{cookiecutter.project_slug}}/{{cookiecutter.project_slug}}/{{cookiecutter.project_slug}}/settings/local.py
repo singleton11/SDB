@@ -1,14 +1,12 @@
-from .base import *
+from .common import *
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'NAME': 'profilechecker',
-        'USER': 'profilechecker',
-        'PASSWORD': 'profilechecker',
+        'NAME': '{{cookiecutter.project_slug}}',
+        'USER': '{{cookiecutter.project_slug}}',
+        'PASSWORD': '{{cookiecutter.project_slug}}',
         'HOST': 'postgres',
         'PORT': '5432',
     }
 }
-
-INSTALLED_APPS += ['django_extensions']
