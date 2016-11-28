@@ -29,7 +29,6 @@ Project will have the following directory structure:
     │       └── Dockerfile
     ├── docker-compose.yml
     ├── fabfile.py
-    ├── fabfile.pyc
     ├── manage.py
     ├── README.rst
     └── requirements
