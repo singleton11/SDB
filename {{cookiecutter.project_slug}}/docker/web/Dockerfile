@@ -11,4 +11,4 @@ COPY requirements /home/app/requirements
 
 RUN /bin/sh -c 'pip3 install -r requirements/local.txt'
 
-CMD python3 {{cookiecutter.project_slug}}/manage.py runserver_plus 0.0.0.0:8000
+CMD python3 manage.py runserver_plus 0.0.0.0:8000

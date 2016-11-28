@@ -1,3 +1,0 @@
--r base.txt
-ipython==5.1.0
-Werkzeug==0.11.11

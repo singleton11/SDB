@@ -1,0 +1,3 @@
+[run]
+branch = True
+omit = *lib*,*migrations*,*__init__.py,manage.py,*tests*,*factories*
