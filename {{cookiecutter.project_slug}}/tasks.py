@@ -22,4 +22,5 @@ def start_db(ctx, daemon=False):
 
 @task
 def stop_db(ctx):
+    """Stop postgres container"""
     ctx.run('docker-compose stop postgres')
