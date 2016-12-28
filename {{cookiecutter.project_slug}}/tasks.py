@@ -2,7 +2,7 @@ from invoke import task
 
 
 @task
-def compile(ctx, env='local'):
+def lock(ctx, env='local'):
     """Compile *.in dependencies to *.txt file"""
     ctx.run(f'pip-compile requirements/{env}.in')
 
