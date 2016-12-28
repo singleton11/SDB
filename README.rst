@@ -24,11 +24,8 @@ Project will have the following directory structure:
     │   │   ├── local.py
     │   ├── urls.py
     │   └── wsgi.py
-    ├── docker
-    │   └── web
-    │       └── Dockerfile
     ├── docker-compose.yml
-    ├── fabfile.py
+    ├── tasks.py
     ├── manage.py
     ├── README.rst
     └── requirements
@@ -42,6 +39,15 @@ Now this boilerplate hasn't many useful things, but it will be added with trying
 
 Changelog
 #########
+
+Next version
+************
+
+- Removed redundant dependencies from common.in and local.in
+- Removed docker-compose web service (because, there is better development in virtual environment)
+- Removed coverage settings (because pycharm has bundled coverage tool)
+- Fabric replaced by invoke
+- Adjusted README.rst title '#' symbol length by project name length
 
 2016-11-28
 **********
