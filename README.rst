@@ -48,6 +48,7 @@ Next version
 - Removed coverage settings (because pycharm has bundled coverage tool)
 - Fabric replaced by invoke
 - Adjusted README.rst title '#' symbol length by project name length
+- Added PyCharm configuration
 
 2016-11-28
 **********
