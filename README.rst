@@ -40,8 +40,8 @@ Now this boilerplate hasn't many useful things, but it will be added with trying
 Changelog
 #########
 
-Next version
-************
+2016-12-28
+**********
 
 - Removed redundant dependencies from common.in and local.in
 - Removed docker-compose web service (because, there is better development in virtual environment)
