@@ -1,5 +1,9 @@
 from .common import *
 
+DEBUG = True
+
+AUTH_PASSWORD_VALIDATORS = []
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
