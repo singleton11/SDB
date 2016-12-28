@@ -3,8 +3,8 @@ services:
   postgres:
     image: mdillon/postgis
     environment:
-    - POSTGRES_DB=mini_crm
-    - POSTGRES_USER=mini_crm
-    - POSTGRES_PASSWORD=mini_crm
+    - POSTGRES_DB={{cookiecutter.project_slug}}
+    - POSTGRES_USER={{cookiecutter.project_slug}}
+    - POSTGRES_PASSWORD={{cookiecutter.project_slug}}
     ports:
     - "5432:5432"
