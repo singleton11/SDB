@@ -3,6 +3,4 @@ __pycache__/
 node_modules/
 static/
 *.pyc
-.coverage
-.coverage.*
 htmlcov/
