@@ -4,6 +4,8 @@ DEBUG = True
 
 AUTH_PASSWORD_VALIDATORS = []
 
+SECRET_KEY = 'CHANGEME!'
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',

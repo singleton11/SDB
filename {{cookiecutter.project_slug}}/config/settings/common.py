@@ -7,8 +7,6 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-SECRET_KEY = 'CHANGEME!'
-
 DEBUG = True
 
 ALLOWED_HOSTS = []
@@ -34,7 +32,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = '{{cookiecutter.project_slug}}.urls'
+ROOT_URLCONF = 'config.urls'
 
 TEMPLATES = [
     {
@@ -52,7 +50,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = '{{cookiecutter.project_slug}}.wsgi.application'
+WSGI_APPLICATION = 'config.wsgi.application'
 
 AUTH_PASSWORD_VALIDATORS = [
     {
