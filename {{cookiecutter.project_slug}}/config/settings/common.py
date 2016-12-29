@@ -7,7 +7,7 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-SECRET_KEY = 'TODO: change to stay secure!!!'
+SECRET_KEY = 'CHANGEME!'
 
 DEBUG = True
 
