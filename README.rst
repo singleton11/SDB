@@ -37,8 +37,23 @@ Philosophy of the project is stay simple and easy to maintain
 
 Now this boilerplate hasn't many useful things, but it will be added with trying to avoid to loose simplicity.
 
+Warning
+#######
+
+Generated project is compatible only with python 3.6. Only modern stuff, Cyka blyat!!
+However ``pip-tools`` haven't been supporting python 3.6 yet, therefore you haven't install ``pip-tools`` in your
+virtualenv. Use system python installation (3.5.2+) for pip-tools
+
 Changelog
 #########
+
+2016-12-29
+**********
+
+- ``SECRET_KEY`` moved in ``local.py`` because ``SECRET_KEY`` have to set up through environment variables in production
+  and purpose of this decision to make project be not able to start without environment variable with ``SECRET_KEY``
+  value provided
+- Added post-generation hook to change ``SECRET_KEY``
 
 2016-12-28
 **********
