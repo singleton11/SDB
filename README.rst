@@ -14,32 +14,39 @@ Project will have the following directory structure:
 .. code::
 
     <project_slug>
+    ├── docker
+    │   └── nginx
+    │       ├── default.conf
+    │       └── Dockerfile
     ├── docker-compose.yml
     ├── Pipfile
     ├── README.rst
-    └── src
-        ├── apps
-        │   └── __init__.py
-        ├── config
-        │   ├── __init__.py
-        │   ├── settings
-        │   │   ├── common
-        │   │   │   ├── base.py
-        │   │   │   ├── __init__.py
-        │   │   │   ├── installed_apps.py
-        │   │   │   ├── localization.py
-        │   │   │   ├── middleware.py
-        │   │   │   ├── security.py
-        │   │   │   ├── staticfiles.py
-        │   │   │   └── templates.py
-        │   │   ├── __init__.py
-        │   │   └── local.py
-        │   ├── urls.py
-        │   └── wsgi.py
-        ├── core
-        │   ├── apps.py
-        │   └── __init__.py
-        └── manage.py
+    ├── src
+    │   ├── apps
+    │   │   └── __init__.py
+    │   ├── config
+    │   │   ├── __init__.py
+    │   │   ├── settings
+    │   │   │   ├── common
+    │   │   │   │   ├── base.py
+    │   │   │   │   ├── __init__.py
+    │   │   │   │   ├── installed_apps.py
+    │   │   │   │   ├── localization.py
+    │   │   │   │   ├── middleware.py
+    │   │   │   │   ├── security.py
+    │   │   │   │   ├── staticfiles.py
+    │   │   │   │   └── templates.py
+    │   │   │   ├── __init__.py
+    │   │   │   └── local.py
+    │   │   ├── urls.py
+    │   │   └── wsgi.py
+    │   ├── core
+    │   │   ├── apps.py
+    │   │   └── __init__.py
+    │   └── manage.py
+    └── swagger
+        └── swagger.yml
+
 
 Then to create virtualenv and install dependencies you have to run
 
@@ -67,6 +74,9 @@ Changelog
 - Django app moved to ``src/``
 - ``pip-tools`` replaced to ``pipenv``
 - Split settings
+- Added swagger
+- Added ``factory-boy`` to dependencies
+- Added ``django-cors-headers``
 
 2016-12-29
 **********
