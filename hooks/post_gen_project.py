@@ -29,7 +29,7 @@ def change_secret_key():
     """Change ``SECRET_KEY``"""
     secret_key = token_urlsafe(50)
 
-    file_path = os.path.join(PROJECT_DIRECTORY, 'config/settings/local.py')
+    file_path = os.path.join(PROJECT_DIRECTORY, 'src/config/settings/local.py')
 
     with open(file_path) as f:
         file_content = f.read()
