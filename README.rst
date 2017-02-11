@@ -14,38 +14,59 @@ Project will have the following directory structure:
 .. code::
 
     <project_slug>
-    ├── apps
-    │   └── __init__.py
-    ├── <project_slug>
-    │   ├── __init__.py
-    │   ├── settings
-    │   │   ├── common.py
-    │   │   ├── __init__.py
-    │   │   ├── local.py
-    │   ├── urls.py
-    │   └── wsgi.py
     ├── docker-compose.yml
-    ├── tasks.py
-    ├── manage.py
+    ├── Pipfile
     ├── README.rst
-    └── requirements
-        ├── common.in
-        └── local.in
+    └── src
+        ├── apps
+        │   └── __init__.py
+        ├── config
+        │   ├── __init__.py
+        │   ├── settings
+        │   │   ├── common
+        │   │   │   ├── base.py
+        │   │   │   ├── __init__.py
+        │   │   │   ├── installed_apps.py
+        │   │   │   ├── localization.py
+        │   │   │   ├── middleware.py
+        │   │   │   ├── security.py
+        │   │   │   ├── staticfiles.py
+        │   │   │   └── templates.py
+        │   │   ├── __init__.py
+        │   │   └── local.py
+        │   ├── urls.py
+        │   └── wsgi.py
+        ├── core
+        │   ├── apps.py
+        │   └── __init__.py
+        └── manage.py
 
+Then to create virtualenv and install dependencies you have to run
+
+.. code::
+
+    pipenv install
+
+To activate virtualenv
+
+.. code::
+
+    pipenv shell
 
 Philosophy of the project is stay simple and easy to maintain
 
 Now this boilerplate hasn't many useful things, but it will be added with trying to avoid to loose simplicity.
 
-Warning
-#######
-
-Generated project is compatible only with python 3.6. Only modern stuff, Cyka blyat!!
-However ``pip-tools`` haven't been supporting python 3.6 yet, therefore you haven't install ``pip-tools`` in your
-virtualenv. Use system python installation (3.5.2+) for pip-tools
-
 Changelog
 #########
+
+2017-02-11
+**********
+
+- Added core app
+- Django app moved to ``src/``
+- ``pip-tools`` replaced to ``pipenv``
+- Split settings
 
 2016-12-29
 **********
