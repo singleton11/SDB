@@ -8,3 +8,17 @@ services:
     - POSTGRES_PASSWORD={{cookiecutter.project_slug}}
     ports:
     - "5432:5432"
+  swagger:
+    image: sjeandeaux/docker-swagger-ui
+    environment:
+    - API_URL=http://localhost:8080/swagger.yml
+    ports:
+    - "8888:8888"
+    depends_on:
+    - nginx
+  nginx:
+    build: ./docker/nginx
+    volumes:
+    - ./swagger:/usr/share/nginx/html
+    ports:
+    - "8080:80"
