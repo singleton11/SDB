@@ -7,6 +7,9 @@ django = "*"
 django-extensions = "*"
 djangorestframework = "*"
 psycopg2 = "*"
+django-model-utils = "*"
+factory-boy = "*"
+django-cors-headers = "*"
 
 [dev-packages]
 ipython = "*"
